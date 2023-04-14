@@ -1,0 +1,54 @@
+<section
+  class="bg-white shadow-md container mx-auto max-w-4xl my-5 flex rounded-lg"
+>
+  <div class="flex items-center py-4 px-3">
+    <input
+      id="all"
+      type="radio"
+      value="all"
+      name="employee"
+      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      [(ngModel)]="selectFilter"
+      (change)="sendSelectRadio(selectFilter)"
+    />
+    <label
+      for="default-radio-1"
+      class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+      >All Employees ({{ all }})</label
+    >
+  </div>
+
+  <div class="flex items-center py-4 px-3">
+    <input
+      id="male"
+      type="radio"
+      value="Male"
+      name="employee"
+      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      [(ngModel)]="selectFilter"
+      (change)="sendSelectRadio(selectFilter)"
+    />
+    <label
+      for="default-radio-1"
+      class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+      >Male ({{ male }})</label
+    >
+  </div>
+
+  <div class="flex items-center py-4 px-3">
+    <input
+      id="female"
+      type="radio"
+      value="Female"
+      name="employee"
+      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      [(ngModel)]="selectFilter"
+      (change)="sendSelectRadio(selectFilter)"
+    />
+    <label
+      for="default-radio-1"
+      class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+      >Female ({{ female }})</label
+    >
+  </div>
+</section>
